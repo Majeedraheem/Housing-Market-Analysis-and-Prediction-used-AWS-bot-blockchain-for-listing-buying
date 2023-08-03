@@ -155,7 +155,7 @@ def render_page():
             user_address,
             address_found,
             property_type,
-            int(sell_price),
+            int(sell_price * 1e18),
             property_uri,
             token_json['image']
         ).transact({'from': user_address, 'gas': 1000000})
